@@ -3,48 +3,63 @@
 	<head>
 		<title>Mastrayasa</title>
 
-		<!-- ini adalah file css untuk merubah tampilan -->
-		<style type="text/css">
-			body{
-				background: #cccccc;
-			}
-
-			body > div{
-				width: 400px;
-				background: #fff;
-				margin: 0 auto;
-				padding: 20px;
-				border: 1px solid #666;
-			}
-
-		</style>
-
-
+		<link href="css/style.css" rel="stylesheet"> 
 	</head>
 	<body>
 		<div>
 
-			<h1>Es Campur Suka Dingin</h1>
-			<small>Jl. Duren Kelapa No.12 Kota palu</small>
-			<hr>
-
+			<div class="header">
+				<h1>Es Campur Suka Dingin</h1>
+				<small>Jl. Duren Kelapa No.12 Kota palu</small>
+			</div>
 			
-				<a href="bakso.html" target="_blank">Bakso</a> / 
-		<a href="mie.html">Mie</a> / 
-		<a href="buah.html">Buah</a>
-			
+			<!-- ini bagian menu -->
+			<div class="menu">
+				<a href="beranda2.html">Home</a>
+				<a href="bakso.html">Bakso</a>
+				<a href="mie.html">Mie</a>
+				<a href="buah.html" onclick="alert('haloo, sya buah'); return false">Buah</a>
+			</div>
 
-			<hr>
+			<!-- ini sidebar -->
+			<div class="kiri">
+				
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
 
-		<p>
-			Selamat datang di <i>website</i> es campur <u>suka dingin</u>.
-		</p>
+			</div>
 
-		<p>
-			Kami menyediakan aneka makanan untuk keluarga anda. cocok untuk kantong anda dan semuanya.
-		</p>
+			<div class="tengah">
+				
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
 
-		<!-- <bdo dir="rtl">
+			</div>
+
+			<!-- ini bagian konten -->
+			<div class="kanan">
+				<p>
+					Selamat datang di <i>website</i> es campur <u>suka dingin</u>.
+				</p>
+
+				<p>
+					Kami menyediakan aneka makanan untuk keluarga anda. cocok untuk kantong anda dan semuanya.
+				</p>
+
+
+				<!-- <bdo dir="rtl">
 			selamat datang di website saya
 		</bdo>
 
@@ -181,15 +196,18 @@
 
 		</form>
 
-		<hr>
 
-		<p>
-			<center>
-				<small>
-					PT. Ec Campur Suka dingin
-				</small>
-			</center>
-		</p>
+		</div>
+
+
+
+		<!-- ini bagian footer -->
+		<div class="footer">
+			PT. Ec Campur Suka dingin
+		</div>
+			
+		<div class="clear"></div>
+
 		</div>
 	</body>
 </html>
