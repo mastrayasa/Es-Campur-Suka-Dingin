@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Menu Bakso</title>
+		<title>Form Pemesanan</title>
 
-		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/jquery-3.4.1.js"></script> 
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 		<div>
@@ -90,29 +92,80 @@
 			</div> -->
 
 			<!-- ini bagian konten -->
-			<div class="kanan">
-				 
+			<div class="kanan"> 
 
-				  
+				<form action="data.html" method="get" id="form-pemesanan">
 
-				<img class="gambar-konten" src="gambar/bakso.jpg" alt="Bakso">
-				  
+					<b>Form Pemesanan Makanan</b> <br>
 
-				<h1>
-					Bakso Klenger
-				</h1>
+					<!-- ini untuk nama -->
+					<p>
+						<label>
+						Nama anda : <br>
+						<input type="text" name="nama">
+					</label>
+					</p>
 
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-				</p>
+					<!--
+					<p>
+						Nama anda: <br>
+						<input type="text" name="nama">
+					</p>
+					-->
+					<p>
+						<label>
+						Nomor HP : <br>
+						<input type="text" name="hp">
+					</label>
+					</p>
 
-				<p>
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-				</p>
+					<p>
+						<label>
+						Alamat : <br>
+						<textarea id="alamat" name="alamat" rows="3"></textarea>
+					</label>
+					</p>
 
-				<p>
-					<a href="pesan.html">Pesan Bakso Sekarang</a>
-				</p>
+					<p>
+						<label>
+						Nama Makanan : <br>
+						<!-- <input type="text" name="makanan"> -->
+						<select name="makanan" id="combo-makanan">
+							<option value="">-- pilih --</option>
+							<option value="Mie Ayam">Mie Ayam</option>
+							<option value="Bakso Klenger">Bakso Klenger</option>
+						</select>
+					</label>
+					</p>
+
+					<p>
+						<label>
+						Jumlah : <br>
+						<input type="text" name="jumlah">
+					</label>
+					</p>
+
+					<p>
+						<input type="submit" value="Kirim">
+					</p>
+
+				</form>
+
+
+				<div id="pesanan-success" style="display: none">
+
+					<img width="100" src="gambar/success.png" alt="Success">
+
+					<h2>Pesanan anda terkirim</h2>
+
+					<p>
+						Terimakasih telah berbelanja di toko online kami
+					</p>
+
+					<p>
+						<button onclick="resetFormPemesanan()" type="button">Pesan Lagi</button>
+					</p>
+				</div>
 
 
 		</div>
@@ -120,7 +173,7 @@
 
 
 		<!-- ini bagian footer -->
-		<div class="footer">
+		<div class="footer ikan" data-id="2">
 			Ec Campur Suka dingin
 		</div>
 			

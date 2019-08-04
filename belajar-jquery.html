@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+
+	<script src="js/jquery-3.4.1.js"></script>
+
+	<style type="text/css">
+		.row-status{
+			margin-top: 20px;
+			padding:20px;
+		}
+
+		.row-status span{
+			color: blue;
+		}
+
+		.row-status span:hover{
+			cursor: pointer;
+		}
+	</style>
+
+	<script type="text/javascript"> 
+
+		$(document).ready(function() { 
+
+			//$("body").html("halo jQuery");
+
+			var a = $("#p1").html();
+
+			$("#p2").html( a  );
+
+
+			$("#p1").on("click",function(){
+				// tambahkan code disini saat p1 di klik
+				console.log("click p1")
+
+				$("#p1").css({
+					"color" : "red", 
+					"font-weight": "bold"
+				});
+
+
+			});
+
+
+			$(".row-status").on("click","span.koment",function(){
+				$(this).parent(".row-status").find('p').show(); 
+
+			});
+
+
+			$(".row-status").on("click","span.like",function(){
+				$(this).html("Unlike"); 
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<p id="p1">
+		Ini adalah paragraf
+	</p>
+
+	<p id="p2">
+		p2
+	</p>
+
+	<div class="row-status" style="border: 1px solid #ccc">
+		<p>
+			Ini adalah komentar facebook
+		</p>
+		<span class="like">like</span> . 
+		<span class="koment">komentar</span> . 
+		<span class="bagikan">bagikan</span>
+
+		<p style="display: none">
+			<textarea class="input-komentar" rows="2" placeholder="Tulis komentar anda"></textarea>
+		</p>
+			
+		
+
+	</div>
+
+
+	<div class="row-status" style="border: 1px solid #ccc">
+		<p>
+			Ini adalah komentar facebook
+		</p>
+		<span class="like">like</span> . 
+		<span class="koment">komentar</span> . 
+		<span class="bagikan">bagikan</span>
+
+		<p style="display: none">
+			<textarea class="input-komentar" rows="2" placeholder="Tulis komentar anda"></textarea>
+		</p>
+			
+		
+
+	</div>
+
+
+	<div class="row-status" style="border: 1px solid #ccc">
+		<p>
+			Ini adalah komentar facebook
+		</p>
+		<span class="like">like</span> . 
+		<span class="koment">komentar</span> . 
+		<span class="bagikan">bagikan</span>
+
+		<p style="display: none">
+			<textarea class="input-komentar" rows="2" placeholder="Tulis komentar anda"></textarea>
+		</p>
+			
+		
+
+	</div>
+
+
+	<div class="row-status" style="border: 1px solid #ccc">
+		<p>
+			Ini adalah komentar facebook
+		</p>
+		<span class="like">like</span> . 
+		<span class="koment">komentar</span> . 
+		<span class="bagikan">bagikan</span>
+
+		<p style="display: none">
+			<textarea class="input-komentar" rows="2" placeholder="Tulis komentar anda"></textarea>
+		</p>
+			
+		
+
+	</div>
+	
+</body>
+</html>

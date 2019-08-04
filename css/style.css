@@ -1,15 +1,17 @@
-body{
-	/*background: #cccccc;*/
+body{ 
 	background-color: #fafafa;
-	background-image: url(https://mastrayasa.github.io/Personal-Blog/gambar/bg5.png);
+	font-size: 14px;
+	font-family: Arial;
+	/*background-image: url(https://mastrayasa.github.io/Personal-Blog/gambar/bg5.png);*/
+	background-image: url(../gambar/bg.png); 
 
 }
 
 body > div{
-	width: 720px;
+	width: 730px;
 	background: #fff;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 4px;
 	border: 1px solid #666;
 }
 
@@ -28,7 +30,7 @@ body .header{
 }
 
 .header small{
-	color:#666;
+	color:#fff;
 }
 
 
@@ -51,34 +53,61 @@ body .header{
 }
 
 div.kiri{
-	padding: 20px;
-	width: 180px;
-	background: #ddd;
+	width: 220px;
 	float: left;
 }
 
-div.kiri > img{ 
-	width: 80px;
-	border:1px solid #111;
-	padding: 2px;
+.kiri .widget{
+	margin-top: 20px;
+	background: #ddd;
 }
 
-div.tengah{
+.kiri .widget h2{
+	padding:0;
+	margin:0;
+	background: #666;
+	color:#fff;
+	padding:4px 15px;
+	font-size: 16px;
+}
+
+.kiri .widget .widget-body{
+	padding:0;
+	margin:0;
+	background: #fafafa;
+	border:1px solid #eaeaea;
+	padding:15px; 
+}
+
+div.kiri img{ 
+	width: 88px;
+	border:1px solid #111; 
+}
+
+
+
+/*div.tengah{
 	padding: 20px;
 	width: 180px;
 	background: #898989;
 	float: left;
-}
+}*/
 
 div.kanan{
-	width: 180px;
-	padding: 20px;
-	background: #cc00cc;
+	width: 480px;
+	padding: 15px;
+	background: #fff;
 	float: left;
 }
 
+/* batasi lebar gambar agar tidak melebihi kotak */
+div.kanan img.gambar-konten{
+	max-width: 100%;
+}
+
 div.footer{
-	padding: 20px 0;
+	margin-top: 15px;
+	padding: 15px 5px;
 	background: #ccc;
 	float: left;
 	width: 720px;
@@ -89,6 +118,34 @@ div.footer{
 
 .clear{
 	clear: both;
+}
+
+table { 
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+}
+
+
+table td, table th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+#pesanan-success{
+	text-align: center;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+textarea,
+select,
+button{
+	padding: 5px;
 }
 
 

@@ -1,44 +1,129 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mie</title>
+		<title>Menu Mie</title>
 
-		<link href="css/style.css" rel="stylesheet">
-		 
-		 
-
-
+		<link href="css/style.css" rel="stylesheet"> 
 	</head>
 	<body>
 		<div>
 
-			<h1 style="color:red">Es Campur Suka Dingin</h1>
-			<small>Jl. Duren Kelapa No.12 Kota palu</small>
-			<hr>
-
+			<div class="header">
+				<h1>Es Campur Suka Dingin</h1>
+				<small>Jl. Duren Kelapa No.12 Kota palu</small>
+			</div>
 			
-				<a href="beranda2.html">Home</a> 
-				<a href="bakso.html" target="_blank">Bakso</a> / 
-		<a href="mie.html">Mie</a> / 
-		<a href="buah.html">Buah</a>
+			<!-- ini bagian menu -->
+			<div class="menu">
+				<a href="index.html">Beranda</a>
+				<a href="bakso.html">Bakso</a>
+				<a href="mie.html">Mie</a>
+				<a href="buah.html" onclick="alert('haloo, sya buah'); return false">Buah</a>
+				<a href="kontak.html">Kontak</a>
+				<a href="pesan.html">Pesan Sekarang</a>
+			</div>
+
+			<!-- ini sidebar -->
+			<div class="kiri">
+				
+				<div class="widget">
+					<h2>Gambar</h2>
+					<div class="widget-body">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+					</div>		
+				</div>
+
+
+
+				<div class="widget">
+					<h2>Aneka Menu</h2>
+					<div class="widget-body">
+						<b>Daftar makanan</b>
+						<ol>
+							<li>Mie Ayam</li>
+							<li>Mie Gorang</li>
+							<li>Nasi Goreng</li>
+							<li>Bakso</li>
+						</ol>
+
+						<b>Daftar Minuman</b>
+						<ol type="A">
+							<li>Esjamur</li>
+							<li>Es campur</li>
+							<li>Soda</li>
+							<li>Degan</li>
+						</ol>
+					</div>		
+				</div>
+
+				<div class="widget">
+					<h2>Kontak</h2>
+					<div class="widget-body">
+						Es Campur Suka Dingin <br>
+						 <small>
+						 	Jl. Mangga No.40 Kota Palu <br>
+						 	Telp. 0852 4126 5xxx
+						 </small>
+					</div>		
+				</div>
+
+			</div>
+
+			<!-- <div class="tengah">
+				
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+				<img src="gambar/iklan.jpg">
+
+			</div> -->
+
+			<!-- ini bagian konten -->
+			<div class="kanan">
+				 
+
+				<img class="gambar-konten" src="gambar/mie.jpg" alt="Mie Ayam">
+				  
+
+				<h1>
+					Mie Ayam Enak Sekali
+				</h1>
+
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+				</p>
+
+				<p>
+					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+
+				<p>
+					<a href="pesan.html">Pesan Mie Sekarang</a>
+				</p>
+
+
+		</div>
+
+
+
+		<!-- ini bagian footer -->
+		<div class="footer">
+			Ec Campur Suka dingin
+		</div>
 			
+		<div class="clear"></div>
 
-			<hr>
-
-		<p>
-			ini adalah halaman mie
-		</p>
- 
-
-		<hr>
-
-		<p>
-			<center>
-				<small>
-					PT. Ec Campur Suka dingin
-				</small>
-			</center>
-		</p>
 		</div>
 	</body>
 </html>

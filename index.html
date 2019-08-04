@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mastrayasa</title>
+		<title>Es Campur Suka Dingin</title>
 
 		<link href="css/style.css" rel="stylesheet"> 
+
+		<script src="js/jquery-3.4.1.js"></script>
+
+
+		<script src="js/app.js"></script>
+
+
+		<script type="text/javascript">
+
+			//alert("halo")
+
+		</script>
+
+		<script type="text/javascript">
+			console.log("Hi...");
+
+			$(document).ready(function() {
+
+				/* Tambahkan kontent pada paragraf ke 3 */
+				$("#paragraf-3").html("With the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum");
+
+
+				/* ubah warna huruf paragraf saat di klik */
+				$("p.ubah-merah").on("click",function(){
+					$(this).css({
+						"font-weight":"bold",
+						"color": "red"
+					});
+				});
+
+				/* sembunyikan tabel daftar harga */
+				$("#btn-hide-table-daftar-harga").on("click",function(e){
+					e.preventDefault(); 
+					$("#table-daftar-harga").toggle();
+				})
+
+			});
+
+		</script>
 	</head>
 	<body>
 		<div>
@@ -15,27 +54,68 @@
 			
 			<!-- ini bagian menu -->
 			<div class="menu">
-				<a href="beranda2.html">Home</a>
+				<a href="index.html">Beranda</a>
 				<a href="bakso.html">Bakso</a>
 				<a href="mie.html">Mie</a>
 				<a href="buah.html" onclick="alert('haloo, sya buah'); return false">Buah</a>
+				<a href="kontak.html">Kontak</a>
+				<a href="pesan.html">Pesan Sekarang</a>
 			</div>
 
 			<!-- ini sidebar -->
 			<div class="kiri">
 				
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
-				<img src="gambar/iklan.jpg">
+				<div class="widget">
+					<h2>Gambar</h2>
+					<div class="widget-body">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+						<img src="gambar/iklan.jpg">
+					</div>		
+				</div>
+
+
+
+				<div class="widget">
+					<h2>Aneka Menu</h2>
+					<div class="widget-body">
+						<b>Daftar makanan</b>
+						<ol>
+							<li>Mie Ayam</li>
+							<li>Mie Gorang</li>
+							<li>Nasi Goreng</li>
+							<li>Bakso</li>
+						</ol>
+
+						<b>Daftar Minuman</b>
+						<ol type="A">
+							<li>Esjamur</li>
+							<li>Es campur</li>
+							<li>Soda</li>
+							<li>Degan</li>
+						</ol>
+					</div>		
+				</div>
+
+				<div class="widget">
+					<h2>Kontak</h2>
+					<div class="widget-body">
+						Es Campur Suka Dingin <br>
+						 <small>
+						 	Jl. Mangga No.40 Kota Palu <br>
+						 	Telp. 0852 4126 5xxx
+						 </small>
+					</div>		
+				</div>
 
 			</div>
 
-			<div class="tengah">
+			<!-- <div class="tengah">
 				
 				<img src="gambar/iklan.jpg">
 				<img src="gambar/iklan.jpg">
@@ -46,10 +126,39 @@
 				<img src="gambar/iklan.jpg">
 				<img src="gambar/iklan.jpg">
 
-			</div>
+			</div> -->
 
 			<!-- ini bagian konten -->
 			<div class="kanan">
+
+
+				<script>
+					var today = new Date();
+
+
+					if(today.getHours() >= 1 && today.getHours() < 10){
+						document.write("Selamat Pagi");
+					} 
+
+					else if(today.getHours() >= 10 && today.getHours() < 14){
+						document.write("Selamat Siang");
+					} 
+
+					else if(today.getHours() >= 14 && today.getHours() < 18){
+						document.write("Selamat Sore");
+					} 
+
+					else{
+						document.write("Selamat Malam");
+					}
+
+					var date = today.getDate()+' / '+(today.getMonth()+1)+' / '+today.getFullYear();
+
+					document.write(" | Sekarang Tanggal : ");
+					document.write(date);  
+				</script>
+
+
 				<p>
 					Selamat datang di <i>website</i> es campur <u>suka dingin</u>.
 				</p>
@@ -67,7 +176,7 @@
 			kami belajar <small>html</small> dengan menyenangkan
 		</p> -->
 
-		<img src="baner.jpg" width="100%">
+		<img src="gambar/rumah-makan.jpg" width="100%">
 
 		<!-- <img src="gambar/iklan.jpg" height="100">
 
@@ -77,36 +186,28 @@
 		  <source src="video.mp4" type="video/mp4">
 		</video> -->
 
+		<p class="ubah-merah">
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+		</p>
 
-<br>
-<br>
-<br>
-		<b>Daftar makanan</b>
-		<ol>
-			<li>Mie Ayam</li>
-			<li>Mie Gorang</li>
-			<li>Nasi Goreng</li>
-			<li>Bakso</li>
-		</ol>
+		<p class="ubah-merah">
+			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+		</p>
 
-		<b>Daftar Minuman</b>
-		<ol type="A">
-			<li>Esjamur</li>
-			<li>Es campur</li>
-			<li>Soda</li>
-			<li>Degan</li>
-		</ol>
+		<p class="ubah-merah" id="paragraf-3"></p>
 
-		<!-- <ul>
-			<li>Mie Ayam</li>
-			<li>Mie Gorang</li>
-			<li>Nasi Goreng</li>
-			<li>Bakso</li>
-		</ul> -->
+		<p>
+			<small>
+				<i>
+					* klik pada paragraf di atas untuk merubah warna
+				</i>
+			</small>
+		</p> 
+ 
 
 
-<b>Daftar Harga</b> <br>
-		<table border="1">
+		<b>Daftar Harga</b> <br>
+		<table border="1" id="table-daftar-harga">
 			<tr>
 				<th>NO</th>
 				<th>Nama Makanan</th>
@@ -133,6 +234,10 @@
 
 		</table>
 
+		<p>
+			<a id="btn-hide-table-daftar-harga" href="#">Sembunyikan daftar harga</a>
+		</p>
+
 		<!-- <b>Daftar makanan</b> <br>
 
 <nav>
@@ -145,56 +250,7 @@
 <br>
 <br>
 
-		<b>Form Pemesanan Makanan</b> <br>
-
-		<form action="data.html" method="get">
-			<!-- ini untuk nama -->
-			<p>
-				<label>
-				Nama anda : <br>
-				<input type="text" name="nama">
-			</label>
-			</p>
-
-			<!--
-			<p>
-				Nama anda: <br>
-				<input type="text" name="nama">
-			</p>
--->
-			<p>
-				<label>
-				Nomor HP : <br>
-				<input type="text" name="hp">
-			</label>
-			</p>
-
-			<p>
-				<label>
-				Alamat : <br>
-				<input type="text" name="alamat">
-			</label>
-			</p>
-
-			<p>
-				<label>
-				Nama Makanan : <br>
-				<input type="text" name="makanan">
-			</label>
-			</p>
-
-			<p>
-				<label>
-				Jumlah : <br>
-				<input type="text" name="jumlah">
-			</label>
-			</p>
-
-			<p>
-				<input type="submit" value="Kirim">
-			</p>
-
-		</form>
+		 
 
 
 		</div>
@@ -203,7 +259,7 @@
 
 		<!-- ini bagian footer -->
 		<div class="footer">
-			PT. Ec Campur Suka dingin
+			Ec Campur Suka dingin
 		</div>
 			
 		<div class="clear"></div>
